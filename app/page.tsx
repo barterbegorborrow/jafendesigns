@@ -22,7 +22,7 @@ export default function HomePage() {
 
   // Save design into Supabase table
   async function saveDesign() {
-    await supabase.from("designs").insert([{ user_name: name, ...design }]);
+    await supabase.from("interior_designs").insert([{ user_name: name, ...design }]);
     alert("✅ Your design was saved!");
   }
 
